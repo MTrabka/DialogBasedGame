@@ -11,9 +11,13 @@ public class DialogueHandler : BaseDialogueReader
     [Tooltip("Default Dialogue File")]
     private DialogueFile _defaultDialogueFile;
 
+    [SerializeField] private DialogueActor timerActor;
+
     [SerializeField]
     private GameSystem gameSystem;
-
+    [SerializeField] 
+    private Timer timer;
+    
     [Space]
     [SerializeField]
     private TextMeshProUGUI mainText;
@@ -22,11 +26,13 @@ public class DialogueHandler : BaseDialogueReader
     [SerializeField]
     private Transform buttonRoot;
 
+
     private List<OptionButton> optionButtons = new List<OptionButton>();
     private List<string> points = new List<string>();
     public List<string> AllPoints => points;
 
     private bool isStarted = false;
+    public bool IsStarted => isStarted;
 
     private DialogueBranchRuntimeNode lastDialogueBranchRuntimeNode;
 
@@ -42,7 +48,13 @@ public class DialogueHandler : BaseDialogueReader
 
             case DialogueBranchRuntimeNode dialogueBranchRuntimeNode:
                 lastDialogueBranchRuntimeNode = dialogueBranchRuntimeNode;
-
+                
+                if (dialogueBranchRuntimeNode.Actor == timerActor)
+                {
+                    Debug.Log("Timer started");
+                    timer.StartLapseTimer();
+                }
+                
                 mainText.text = dialogueBranchRuntimeNode.Line;
                 var i = 0;
                 foreach (var branch in dialogueBranchRuntimeNode.Branches)
@@ -57,7 +69,8 @@ public class DialogueHandler : BaseDialogueReader
 
                 if (callStringEventRuntimeNode.EventValue == "END")
                 {
-                    if (!SaveFile.WriteDataToCSV(points, out System.Exception ex))
+                    timer.StopTimer();
+                    if (!SaveFile.WriteDataToCSV(points,timer.GetTimeString(out int count),count, out System.Exception ex))
                     {
                         gameSystem.HandleError(ex.Message);
                         break;
@@ -78,31 +91,15 @@ public class DialogueHandler : BaseDialogueReader
         }
     }
 
-    private void Start()
+    public void DialogueStart()
     {
-        mainText.text = "Wciœnij spacjê aby rozpocz¹æ.";
-    }
-
-    private void Update()
-    {
-        if (isStarted) return;
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            DialogueStart();
-        }
-    }
-
-    private void DialogueStart()
-    {
-        isStarted = true;
-
         if (!SaveFile.CheckIfCanWriteToFile(out System.Exception ex))
         {
             gameSystem.HandleError(ex.Message);
             return;
         }
-
+        isStarted = true;
+        timer.StartTimer();
         StartDialogue(_defaultDialogueFile);
     }
 
@@ -115,7 +112,7 @@ public class DialogueHandler : BaseDialogueReader
     private void CreateButtonWithoutBranch(string text)
     {
         var newButton = Instantiate(buttonPrefab, buttonRoot);
-        newButton.SetButton(() => GoToNextNode(), text);
+        newButton.SetButton(GoToNextNode, text);
         optionButtons.Add(newButton);
     }
 
@@ -138,6 +135,8 @@ public class DialogueHandler : BaseDialogueReader
 
     private void AddPoints(string point)
     {
+        Debug.Log("Timer ended");
+        timer.EndLapseTimer();
         points.Add(point);
         foreach (var item in points)
         {

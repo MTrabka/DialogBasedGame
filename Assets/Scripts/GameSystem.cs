@@ -1,5 +1,7 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameSystem : MonoBehaviour
 {
@@ -13,7 +15,45 @@ public class GameSystem : MonoBehaviour
     private TextMeshProUGUI errorCodeText;
     [SerializeField]
     private GameObject errorCodePanel;
+    [SerializeField] private Button codeButton;
+    [SerializeField] private TMP_InputField codeField;
+    
+    
+    private bool codeIsSaved = false;
 
+    private void Start()
+    {
+        mainText.text = "Podaj kod osoby badanej:";
+    }
+
+    public void OnClickCodeButton()
+    {
+        var code = codeField.text;
+        if(string.IsNullOrEmpty(code)) return;
+        PlayerPrefs.SetString(PlayerPrefsSaveKeys.CODE, code);
+        CodeIsSaved();
+        codeButton.gameObject.SetActive(false);
+        codeField.gameObject.SetActive(false);
+    }
+    
+    private void CodeIsSaved()
+    {
+        codeIsSaved = true;
+        mainText.text = "WciÅ›nij spacjÄ™, aby rozpoczÄ…Ä‡";
+    }
+
+    private void Update()
+    {
+        if (dialogueHandler.IsStarted) return;
+        if (!codeIsSaved) return;
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            dialogueHandler.DialogueStart();
+            
+        }
+    }
+    
     private void EnableEnd()
     {
         string text = "";
@@ -24,6 +64,6 @@ public class GameSystem : MonoBehaviour
     public void HandleError(string errorMessage)
     {
         errorCodePanel.SetActive(true);
-        errorCodeText.text = $"B³¹d podczas zapisywania do pliku CSV.\nSprawdŸ czy plik nie jest otwarty w innym programie!\nZrestartuj program!\n<color=white>Kod b³êdu - {errorMessage}</color>";
+        errorCodeText.text = $"BÅ‚Ä…d podczas zapisywania do pliku CSV.\nSprawdÅº czy plik nie jest otwarty w innym programie!\nZrestartuj program!\n<color=white>Kod bÅ‚Ä™du - {errorMessage}</color>";
     }
 }

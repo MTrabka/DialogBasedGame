@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
@@ -8,45 +7,53 @@ public static class SaveFile
 {
     private static string fileName = "dane.csv";
 
-    public static bool WriteDataToCSV(List<string> data, out System.Exception exption)
+    public static bool WriteDataToCSV(List<string> data, string times, int timersCount, out System.Exception exption)
     {
         string desktopPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop);
         string filePath = Path.Combine(desktopPath, fileName);
-
+        
+        data.Insert(0, PlayerPrefs.GetString(PlayerPrefsSaveKeys.CODE, "NULL"));
+        
         try
         {
-            // SprawdŸ, czy plik ju¿ istnieje
+            // Sprawdï¿½, czy plik juï¿½ istnieje
             bool fileExists = File.Exists(filePath);
 
-            // Otwórz lub utwórz nowy plik CSV
-            StreamWriter sw = new StreamWriter(filePath, append: fileExists, encoding: Encoding.UTF8);
+            // Otwï¿½rz lub utwï¿½rz nowy plik CSV
+            StreamWriter sw = new StreamWriter(filePath, append: fileExists, Encoding.UTF8);
 
-            // Wygeneruj nag³ówki kolumn
+            // Wygeneruj nagï¿½ï¿½wki kolumn
             if (!fileExists)
             {
-                string header = "Wybór1";
-                for (int i = 2; i <= data.Count; i++)
+                string header = "Kod osoby badanej";
+                for (int i = 1; i <= data.Count; i++)
                 {
-                    header += "," + "Wybór" + i;
+                    header += "," + "WybÃ³r" + i;
                 }
+                for (int i = 1; i < timersCount; i++)
+                {
+                    header += "," + "WybÃ³r" + i +"czas";
+                }
+                header+="CaÅ‚y czas";
                 sw.WriteLine(header);
             }
 
             // Zapisz dane do pliku CSV
             string line = string.Join(",", data);
+            line += "," + times;
             sw.WriteLine(line);
 
             // Zamknij plik
             sw.Close();
 
-            Debug.Log("Dane zosta³y zapisane do pliku CSV na pulpicie.");
+            Debug.Log("Dane zostaÅ‚y zapisane do pliku CSV na pulpicie.");
             exption = null;
             return true;
         }
         catch (System.Exception ex)
         {
             exption = ex;
-            Debug.LogError("Wyst¹pi³ b³¹d podczas zapisywania do pliku CSV: " + ex.Message);
+            Debug.LogError("WystÄ…piÅ‚ bÅ‚Ä…d podczas zapisywania do pliku CSV: " + ex.Message);
             return false;
         }
     }
@@ -58,20 +65,21 @@ public static class SaveFile
 
         try
         {
-            // SprawdŸ, czy plik ju¿ istnieje
+            // Sprawdï¿½, czy plik juï¿½ istnieje
             bool fileExists = File.Exists(filePath);
             exption = null;
-            if (!fileExists) return true; //Je¿eli plik nie istnieje -> wsio haraszo
+            if (!fileExists) return true; //Jeï¿½eli plik nie istnieje -> wsio haraszo
 
-            // Otwórz lub utwórz nowy plik CSV
+            // Otwï¿½rz lub utwï¿½rz nowy plik CSV
             StreamReader sw = new StreamReader(filePath, encoding: Encoding.UTF8);
+            sw.Close();
             
             return true;
         }
         catch (System.Exception ex)
         {
             exption = ex;
-            Debug.LogError("Wyst¹pi³ b³¹d podczas zapisywania do pliku CSV: " + ex.Message);
+            Debug.LogError("WystÄ…piÅ‚ bÅ‚Ä…d podczas zapisywania do pliku CSV: " + ex.Message);
             return false;
         }
     }
