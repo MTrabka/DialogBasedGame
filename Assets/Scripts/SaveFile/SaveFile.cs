@@ -26,15 +26,15 @@ public static class SaveFile
             if (!fileExists)
             {
                 string header = "Kod osoby badanej";
-                for (int i = 1; i <= data.Count; i++)
+                for (int i = 1; i < data.Count; i++)
                 {
                     header += "," + "Wybór" + i;
                 }
-                for (int i = 1; i < timersCount; i++)
+                for (int i = 1; i <= timersCount; i++)
                 {
                     header += "," + "Wybór" + i +"czas";
                 }
-                header+="Cały czas";
+                header+=",Cały czas";
                 sw.WriteLine(header);
             }
 

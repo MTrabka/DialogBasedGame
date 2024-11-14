@@ -7,6 +7,9 @@ using UnityEngine;
 
 public class DialogueHandler : BaseDialogueReader
 {
+    [Space(20)]
+    [SerializeField] private string tekstPrzycisku = "Dalej";
+    [Space(20)]
     [SerializeField]
     [Tooltip("Default Dialogue File")]
     private DialogueFile _defaultDialogueFile;
@@ -43,7 +46,7 @@ public class DialogueHandler : BaseDialogueReader
         {
             case DialogueLineRuntimeNode dialogueLineRuntimeNode:
                 mainText.text = dialogueLineRuntimeNode.Line;
-                CreateButtonWithoutBranch("Dalej");
+                CreateButtonWithoutBranch(tekstPrzycisku);
                 break;
 
             case DialogueBranchRuntimeNode dialogueBranchRuntimeNode:
