@@ -1,6 +1,460 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8183481455222951564
+--- !u!114 &-6913618715264522682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2563b3688f45b5c409b332fdaaf10292, type: 3}
+  m_Name: Call String Event - 7bfa8e71-1cfe-426b-a054-6282f67c0360
+  m_EditorClassIdentifier: 
+  _nodeTypeName: FM.Editor.Systems.DialogueNodes.CallStringEventNode, FM-Dialogues.Editor,
+    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  _nodePosition: {x: 1150, y: 50}
+  _guid: 7bfa8e71-1cfe-426b-a054-6282f67c0360
+  _connections:
+  - _originPort:
+      _portName: Input
+      _portDirection: 0
+      _nodeGUID: 7bfa8e71-1cfe-426b-a054-6282f67c0360
+    _targetPort:
+      _portName: Next
+      _portDirection: 1
+      _nodeGUID: 4317bd1c-3734-48fb-b72f-6c2bcb1ce267
+  - _originPort:
+      _portName: Next
+      _portDirection: 1
+      _nodeGUID: 7bfa8e71-1cfe-426b-a054-6282f67c0360
+    _targetPort:
+      _portName: Input
+      _portDirection: 0
+      _nodeGUID: da970653-4802-4fe2-a002-2d10dffbb88e
+  _dialogueFile: {fileID: 11400000}
+  _event: {fileID: 11400000, guid: d9afa796d6c42b04bbad88e416a05d53, type: 2}
+  _eventValue: Nd
+--- !u!114 &-5571751512685308003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4c137467e1bdac49a2d4264bb49fe3b, type: 3}
+  m_Name: Start - 7062203a-8250-41ad-ac2c-702ba4745d67
+  m_EditorClassIdentifier: 
+  _nodeTypeName: FM.Editor.Systems.DialogueNodes.StartNode, FM-Dialogues.Editor,
+    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  _nodePosition: {x: 50, y: 50}
+  _guid: 7062203a-8250-41ad-ac2c-702ba4745d67
+  _connections:
+  - _originPort:
+      _portName: Next
+      _portDirection: 1
+      _nodeGUID: 7062203a-8250-41ad-ac2c-702ba4745d67
+    _targetPort:
+      _portName: Input
+      _portDirection: 0
+      _nodeGUID: ea427119-3832-44c1-aa4c-0b2cff8df7cd
+  _dialogueFile: {fileID: 11400000}
+--- !u!114 &-3785678108273642485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2563b3688f45b5c409b332fdaaf10292, type: 3}
+  m_Name: Call String Event - 59057024-6e2c-4b83-a9ac-147f3f83043a
+  m_EditorClassIdentifier: 
+  _nodeTypeName: FM.Editor.Systems.DialogueNodes.CallStringEventNode, FM-Dialogues.Editor,
+    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  _nodePosition: {x: 1775, y: -100}
+  _guid: 59057024-6e2c-4b83-a9ac-147f3f83043a
+  _connections:
+  - _originPort:
+      _portName: Input
+      _portDirection: 0
+      _nodeGUID: 59057024-6e2c-4b83-a9ac-147f3f83043a
+    _targetPort:
+      _portName: 0
+      _portDirection: 1
+      _nodeGUID: da970653-4802-4fe2-a002-2d10dffbb88e
+  - _originPort:
+      _portName: Next
+      _portDirection: 1
+      _nodeGUID: 59057024-6e2c-4b83-a9ac-147f3f83043a
+    _targetPort:
+      _portName: Input
+      _portDirection: 0
+      _nodeGUID: 8ff4bb0e-c717-4ed7-8a66-93da20cde6cd
+  _dialogueFile: {fileID: 11400000}
+  _event: {fileID: 11400000, guid: d9afa796d6c42b04bbad88e416a05d53, type: 2}
+  _eventValue: A
+--- !u!114 &-2374858285497671656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f69c3fda7fe1d1946860ab9b14af42f1, type: 3}
+  m_Name: Dialogue Line - 4317bd1c-3734-48fb-b72f-6c2bcb1ce267
+  m_EditorClassIdentifier: 
+  _nodeTypeName: FM.Editor.Systems.DialogueNodes.DialogueLineNode, FM-Dialogues.Editor,
+    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  _nodePosition: {x: 800, y: 50}
+  _guid: 4317bd1c-3734-48fb-b72f-6c2bcb1ce267
+  _connections:
+  - _originPort:
+      _portName: Input
+      _portDirection: 0
+      _nodeGUID: 4317bd1c-3734-48fb-b72f-6c2bcb1ce267
+    _targetPort:
+      _portName: Next
+      _portDirection: 1
+      _nodeGUID: 4e758d28-7f63-4007-883a-3c0a0296d783
+  - _originPort:
+      _portName: Input
+      _portDirection: 0
+      _nodeGUID: 4317bd1c-3734-48fb-b72f-6c2bcb1ce267
+    _targetPort:
+      _portName: Next
+      _portDirection: 1
+      _nodeGUID: fb572dfc-ddaf-47ab-8e01-4fa4f1c1fdfd
+  - _originPort:
+      _portName: Input
+      _portDirection: 0
+      _nodeGUID: 4317bd1c-3734-48fb-b72f-6c2bcb1ce267
+    _targetPort:
+      _portName: Next
+      _portDirection: 1
+      _nodeGUID: 4a914a08-b49e-49c2-9b22-7fc216257408
+  - _originPort:
+      _portName: Next
+      _portDirection: 1
+      _nodeGUID: 4317bd1c-3734-48fb-b72f-6c2bcb1ce267
+    _targetPort:
+      _portName: Input
+      _portDirection: 0
+      _nodeGUID: 7bfa8e71-1cfe-426b-a054-6282f67c0360
+  _dialogueFile: {fileID: 11400000}
+  _actor: {fileID: 11400000, guid: c4d7d513dd0cd6b468c164aa528a4429, type: 2}
+  _text: Pytanie bez odpowiedzi
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d37bef83845b764c9fcbbc0c0e9a520, type: 3}
+  m_Name: New Dialogue File
+  m_EditorClassIdentifier: 
+  _nodes:
+  - {fileID: -5571751512685308003}
+  - {fileID: 1808435946082535426}
+  - {fileID: 3682315187752487553}
+  - {fileID: 3542042018031840501}
+  - {fileID: 5962830476670274864}
+  - {fileID: -6913618715264522682}
+  - {fileID: 1736136420851290776}
+  - {fileID: 6079575993684898973}
+  - {fileID: -3785678108273642485}
+  - {fileID: -2374858285497671656}
+  - {fileID: 8406246856732009755}
+  - {fileID: 318689195463238035}
+--- !u!114 &318689195463238035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abd9ce6fa91aeb94282a64839b4c0e68, type: 3}
+  m_Name: Dialogue Branch - d166c464-987f-4b38-b80f-7c268e3c608f
+  m_EditorClassIdentifier: 
+  _nodeTypeName: FM.Editor.Systems.DialogueNodes.DialogueBranchNode, FM-Dialogues.Editor,
+    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  _nodePosition: {x: 2275, y: 50}
+  _guid: d166c464-987f-4b38-b80f-7c268e3c608f
+  _connections:
+  - _originPort:
+      _portName: Input
+      _portDirection: 0
+      _nodeGUID: d166c464-987f-4b38-b80f-7c268e3c608f
+    _targetPort:
+      _portName: Next
+      _portDirection: 1
+      _nodeGUID: 8ff4bb0e-c717-4ed7-8a66-93da20cde6cd
+  _dialogueFile: {fileID: 11400000}
+  _branches: []
+  _actor: {fileID: 11400000, guid: c0f88cdf6a9d6e74da1d4492a1cf8c85, type: 2}
+  _line: "Wiadomo\u015B\u0107 ko\u0144cowa"
+  _branchData: {fileID: 0}
+--- !u!114 &1736136420851290776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abd9ce6fa91aeb94282a64839b4c0e68, type: 3}
+  m_Name: Dialogue Branch - da970653-4802-4fe2-a002-2d10dffbb88e
+  m_EditorClassIdentifier: 
+  _nodeTypeName: FM.Editor.Systems.DialogueNodes.DialogueBranchNode, FM-Dialogues.Editor,
+    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  _nodePosition: {x: 1425, y: 50}
+  _guid: da970653-4802-4fe2-a002-2d10dffbb88e
+  _connections:
+  - _originPort:
+      _portName: Input
+      _portDirection: 0
+      _nodeGUID: da970653-4802-4fe2-a002-2d10dffbb88e
+    _targetPort:
+      _portName: Next
+      _portDirection: 1
+      _nodeGUID: 7bfa8e71-1cfe-426b-a054-6282f67c0360
+  - _originPort:
+      _portName: 0
+      _portDirection: 1
+      _nodeGUID: da970653-4802-4fe2-a002-2d10dffbb88e
+    _targetPort:
+      _portName: Input
+      _portDirection: 0
+      _nodeGUID: 59057024-6e2c-4b83-a9ac-147f3f83043a
+  - _originPort:
+      _portName: 1
+      _portDirection: 1
+      _nodeGUID: da970653-4802-4fe2-a002-2d10dffbb88e
+    _targetPort:
+      _portName: Input
+      _portDirection: 0
+      _nodeGUID: bf48bd5f-8bcd-433e-a7c1-e1a5a026903e
+  _dialogueFile: {fileID: 11400000}
+  _branches:
+  - Opcja 1
+  - Opcja 2
+  _actor: {fileID: 11400000, guid: c4d7d513dd0cd6b468c164aa528a4429, type: 2}
+  _line: Pytanie diagnostyczne
+  _branchData: {fileID: 0}
+--- !u!114 &1808435946082535426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abd9ce6fa91aeb94282a64839b4c0e68, type: 3}
+  m_Name: Dialogue Branch - ea427119-3832-44c1-aa4c-0b2cff8df7cd
+  m_EditorClassIdentifier: 
+  _nodeTypeName: FM.Editor.Systems.DialogueNodes.DialogueBranchNode, FM-Dialogues.Editor,
+    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  _nodePosition: {x: 200, y: 25}
+  _guid: ea427119-3832-44c1-aa4c-0b2cff8df7cd
+  _connections:
+  - _originPort:
+      _portName: Input
+      _portDirection: 0
+      _nodeGUID: ea427119-3832-44c1-aa4c-0b2cff8df7cd
+    _targetPort:
+      _portName: Next
+      _portDirection: 1
+      _nodeGUID: 7062203a-8250-41ad-ac2c-702ba4745d67
+  - _originPort:
+      _portName: 0
+      _portDirection: 1
+      _nodeGUID: ea427119-3832-44c1-aa4c-0b2cff8df7cd
+    _targetPort:
+      _portName: Input
+      _portDirection: 0
+      _nodeGUID: 4a914a08-b49e-49c2-9b22-7fc216257408
+  - _originPort:
+      _portName: 1
+      _portDirection: 1
+      _nodeGUID: ea427119-3832-44c1-aa4c-0b2cff8df7cd
+    _targetPort:
+      _portName: Input
+      _portDirection: 0
+      _nodeGUID: 4e758d28-7f63-4007-883a-3c0a0296d783
+  - _originPort:
+      _portName: 2
+      _portDirection: 1
+      _nodeGUID: ea427119-3832-44c1-aa4c-0b2cff8df7cd
+    _targetPort:
+      _portName: Input
+      _portDirection: 0
+      _nodeGUID: fb572dfc-ddaf-47ab-8e01-4fa4f1c1fdfd
+  _dialogueFile: {fileID: 11400000}
+  _branches:
+  - Opcja 1
+  - Opcja 2
+  - Opcja 3
+  _actor: {fileID: 11400000, guid: c4d7d513dd0cd6b468c164aa528a4429, type: 2}
+  _line: Pytanie niediagnostyczne 1
+  _branchData: {fileID: 0}
+--- !u!114 &3542042018031840501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2563b3688f45b5c409b332fdaaf10292, type: 3}
+  m_Name: Call String Event - 4a914a08-b49e-49c2-9b22-7fc216257408
+  m_EditorClassIdentifier: 
+  _nodeTypeName: FM.Editor.Systems.DialogueNodes.CallStringEventNode, FM-Dialogues.Editor,
+    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  _nodePosition: {x: 550, y: -125}
+  _guid: 4a914a08-b49e-49c2-9b22-7fc216257408
+  _connections:
+  - _originPort:
+      _portName: Input
+      _portDirection: 0
+      _nodeGUID: 4a914a08-b49e-49c2-9b22-7fc216257408
+    _targetPort:
+      _portName: 0
+      _portDirection: 1
+      _nodeGUID: ea427119-3832-44c1-aa4c-0b2cff8df7cd
+  - _originPort:
+      _portName: Next
+      _portDirection: 1
+      _nodeGUID: 4a914a08-b49e-49c2-9b22-7fc216257408
+    _targetPort:
+      _portName: Input
+      _portDirection: 0
+      _nodeGUID: 4317bd1c-3734-48fb-b72f-6c2bcb1ce267
+  _dialogueFile: {fileID: 11400000}
+  _event: {fileID: 11400000, guid: d9afa796d6c42b04bbad88e416a05d53, type: 2}
+  _eventValue: Nd
+--- !u!114 &3682315187752487553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2563b3688f45b5c409b332fdaaf10292, type: 3}
+  m_Name: Call String Event - 4e758d28-7f63-4007-883a-3c0a0296d783
+  m_EditorClassIdentifier: 
+  _nodeTypeName: FM.Editor.Systems.DialogueNodes.CallStringEventNode, FM-Dialogues.Editor,
+    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  _nodePosition: {x: 550, y: 50}
+  _guid: 4e758d28-7f63-4007-883a-3c0a0296d783
+  _connections:
+  - _originPort:
+      _portName: Input
+      _portDirection: 0
+      _nodeGUID: 4e758d28-7f63-4007-883a-3c0a0296d783
+    _targetPort:
+      _portName: 1
+      _portDirection: 1
+      _nodeGUID: ea427119-3832-44c1-aa4c-0b2cff8df7cd
+  - _originPort:
+      _portName: Next
+      _portDirection: 1
+      _nodeGUID: 4e758d28-7f63-4007-883a-3c0a0296d783
+    _targetPort:
+      _portName: Input
+      _portDirection: 0
+      _nodeGUID: 4317bd1c-3734-48fb-b72f-6c2bcb1ce267
+  _dialogueFile: {fileID: 11400000}
+  _event: {fileID: 11400000, guid: d9afa796d6c42b04bbad88e416a05d53, type: 2}
+  _eventValue: Nd
+--- !u!114 &5962830476670274864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2563b3688f45b5c409b332fdaaf10292, type: 3}
+  m_Name: Call String Event - fb572dfc-ddaf-47ab-8e01-4fa4f1c1fdfd
+  m_EditorClassIdentifier: 
+  _nodeTypeName: FM.Editor.Systems.DialogueNodes.CallStringEventNode, FM-Dialogues.Editor,
+    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  _nodePosition: {x: 550, y: 225}
+  _guid: fb572dfc-ddaf-47ab-8e01-4fa4f1c1fdfd
+  _connections:
+  - _originPort:
+      _portName: Input
+      _portDirection: 0
+      _nodeGUID: fb572dfc-ddaf-47ab-8e01-4fa4f1c1fdfd
+    _targetPort:
+      _portName: 2
+      _portDirection: 1
+      _nodeGUID: ea427119-3832-44c1-aa4c-0b2cff8df7cd
+  - _originPort:
+      _portName: Next
+      _portDirection: 1
+      _nodeGUID: fb572dfc-ddaf-47ab-8e01-4fa4f1c1fdfd
+    _targetPort:
+      _portName: Input
+      _portDirection: 0
+      _nodeGUID: 4317bd1c-3734-48fb-b72f-6c2bcb1ce267
+  _dialogueFile: {fileID: 11400000}
+  _event: {fileID: 11400000, guid: d9afa796d6c42b04bbad88e416a05d53, type: 2}
+  _eventValue: Nd
+--- !u!114 &6079575993684898973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2563b3688f45b5c409b332fdaaf10292, type: 3}
+  m_Name: Call String Event - bf48bd5f-8bcd-433e-a7c1-e1a5a026903e
+  m_EditorClassIdentifier: 
+  _nodeTypeName: FM.Editor.Systems.DialogueNodes.CallStringEventNode, FM-Dialogues.Editor,
+    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  _nodePosition: {x: 1775, y: 150}
+  _guid: bf48bd5f-8bcd-433e-a7c1-e1a5a026903e
+  _connections:
+  - _originPort:
+      _portName: Input
+      _portDirection: 0
+      _nodeGUID: bf48bd5f-8bcd-433e-a7c1-e1a5a026903e
+    _targetPort:
+      _portName: 1
+      _portDirection: 1
+      _nodeGUID: da970653-4802-4fe2-a002-2d10dffbb88e
+  - _originPort:
+      _portName: Next
+      _portDirection: 1
+      _nodeGUID: bf48bd5f-8bcd-433e-a7c1-e1a5a026903e
+    _targetPort:
+      _portName: Input
+      _portDirection: 0
+      _nodeGUID: 8ff4bb0e-c717-4ed7-8a66-93da20cde6cd
+  _dialogueFile: {fileID: 11400000}
+  _event: {fileID: 11400000, guid: d9afa796d6c42b04bbad88e416a05d53, type: 2}
+  _eventValue: B
+--- !u!114 &8406246856732009755
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14,7 +468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _nodeTypeName: FM.Editor.Systems.DialogueNodes.CallStringEventNode, FM-Dialogues.Editor,
     Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  _nodePosition: {x: 2175, y: 75}
+  _nodePosition: {x: 2025, y: 50}
   _guid: 8ff4bb0e-c717-4ed7-8a66-93da20cde6cd
   _connections:
   - _originPort:
@@ -44,494 +498,3 @@ MonoBehaviour:
   _dialogueFile: {fileID: 11400000}
   _event: {fileID: 11400000, guid: d9afa796d6c42b04bbad88e416a05d53, type: 2}
   _eventValue: END
---- !u!114 &-6200330618684351105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2563b3688f45b5c409b332fdaaf10292, type: 3}
-  m_Name: Call String Event - 4e758d28-7f63-4007-883a-3c0a0296d783
-  m_EditorClassIdentifier: 
-  _nodeTypeName: FM.Editor.Systems.DialogueNodes.CallStringEventNode, FM-Dialogues.Editor,
-    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  _nodePosition: {x: 925, y: 75}
-  _guid: 4e758d28-7f63-4007-883a-3c0a0296d783
-  _connections:
-  - _originPort:
-      _portName: Input
-      _portDirection: 0
-      _nodeGUID: 4e758d28-7f63-4007-883a-3c0a0296d783
-    _targetPort:
-      _portName: 1
-      _portDirection: 1
-      _nodeGUID: facde618-597f-43f9-ac48-43bed49ce91d
-  - _originPort:
-      _portName: Next
-      _portDirection: 1
-      _nodeGUID: 4e758d28-7f63-4007-883a-3c0a0296d783
-    _targetPort:
-      _portName: Input
-      _portDirection: 0
-      _nodeGUID: 4317bd1c-3734-48fb-b72f-6c2bcb1ce267
-  _dialogueFile: {fileID: 11400000}
-  _event: {fileID: 11400000, guid: d9afa796d6c42b04bbad88e416a05d53, type: 2}
-  _eventValue: Wybrano2
---- !u!114 &-5207535040079940030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4c137467e1bdac49a2d4264bb49fe3b, type: 3}
-  m_Name: Start - 7062203a-8250-41ad-ac2c-702ba4745d67
-  m_EditorClassIdentifier: 
-  _nodeTypeName: FM.Editor.Systems.DialogueNodes.StartNode, FM-Dialogues.Editor,
-    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  _nodePosition: {x: 50, y: 50}
-  _guid: 7062203a-8250-41ad-ac2c-702ba4745d67
-  _connections:
-  - _originPort:
-      _portName: Next
-      _portDirection: 1
-      _nodeGUID: 7062203a-8250-41ad-ac2c-702ba4745d67
-    _targetPort:
-      _portName: Input
-      _portDirection: 0
-      _nodeGUID: ea427119-3832-44c1-aa4c-0b2cff8df7cd
-  _dialogueFile: {fileID: 11400000}
---- !u!114 &-4089223235617581272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f69c3fda7fe1d1946860ab9b14af42f1, type: 3}
-  m_Name: Dialogue Line - 4317bd1c-3734-48fb-b72f-6c2bcb1ce267
-  m_EditorClassIdentifier: 
-  _nodeTypeName: FM.Editor.Systems.DialogueNodes.DialogueLineNode, FM-Dialogues.Editor,
-    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  _nodePosition: {x: 1225, y: 75}
-  _guid: 4317bd1c-3734-48fb-b72f-6c2bcb1ce267
-  _connections:
-  - _originPort:
-      _portName: Input
-      _portDirection: 0
-      _nodeGUID: 4317bd1c-3734-48fb-b72f-6c2bcb1ce267
-    _targetPort:
-      _portName: Next
-      _portDirection: 1
-      _nodeGUID: 4e758d28-7f63-4007-883a-3c0a0296d783
-  - _originPort:
-      _portName: Input
-      _portDirection: 0
-      _nodeGUID: 4317bd1c-3734-48fb-b72f-6c2bcb1ce267
-    _targetPort:
-      _portName: Next
-      _portDirection: 1
-      _nodeGUID: 4a914a08-b49e-49c2-9b22-7fc216257408
-  - _originPort:
-      _portName: Input
-      _portDirection: 0
-      _nodeGUID: 4317bd1c-3734-48fb-b72f-6c2bcb1ce267
-    _targetPort:
-      _portName: Next
-      _portDirection: 1
-      _nodeGUID: fb572dfc-ddaf-47ab-8e01-4fa4f1c1fdfd
-  - _originPort:
-      _portName: Next
-      _portDirection: 1
-      _nodeGUID: 4317bd1c-3734-48fb-b72f-6c2bcb1ce267
-    _targetPort:
-      _portName: Input
-      _portDirection: 0
-      _nodeGUID: da970653-4802-4fe2-a002-2d10dffbb88e
-  _dialogueFile: {fileID: 11400000}
-  _actor: {fileID: 11400000, guid: c0f88cdf6a9d6e74da1d4492a1cf8c85, type: 2}
-  _text: "To jest tekst bez wyboru z domy\u015Blnym przyciskiem dalej"
---- !u!114 &-1131150653595287804
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2563b3688f45b5c409b332fdaaf10292, type: 3}
-  m_Name: Call String Event - bf48bd5f-8bcd-433e-a7c1-e1a5a026903e
-  m_EditorClassIdentifier: 
-  _nodeTypeName: FM.Editor.Systems.DialogueNodes.CallStringEventNode, FM-Dialogues.Editor,
-    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  _nodePosition: {x: 1925, y: 75}
-  _guid: bf48bd5f-8bcd-433e-a7c1-e1a5a026903e
-  _connections:
-  - _originPort:
-      _portName: Input
-      _portDirection: 0
-      _nodeGUID: bf48bd5f-8bcd-433e-a7c1-e1a5a026903e
-    _targetPort:
-      _portName: 1
-      _portDirection: 1
-      _nodeGUID: da970653-4802-4fe2-a002-2d10dffbb88e
-  - _originPort:
-      _portName: Next
-      _portDirection: 1
-      _nodeGUID: bf48bd5f-8bcd-433e-a7c1-e1a5a026903e
-    _targetPort:
-      _portName: Input
-      _portDirection: 0
-      _nodeGUID: 8ff4bb0e-c717-4ed7-8a66-93da20cde6cd
-  _dialogueFile: {fileID: 11400000}
-  _event: {fileID: 11400000, guid: d9afa796d6c42b04bbad88e416a05d53, type: 2}
-  _eventValue: Wybrano2
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d37bef83845b764c9fcbbc0c0e9a520, type: 3}
-  m_Name: New Dialogue File
-  m_EditorClassIdentifier: 
-  _nodes:
-  - {fileID: -5207535040079940030}
-  - {fileID: 782024348338145155}
-  - {fileID: 5586760554028715612}
-  - {fileID: -6200330618684351105}
-  - {fileID: 613498913373970284}
-  - {fileID: -4089223235617581272}
-  - {fileID: 7385070351332702353}
-  - {fileID: 47335256188157426}
-  - {fileID: 6960673171131265527}
-  - {fileID: -8183481455222951564}
-  - {fileID: -1131150653595287804}
-  - {fileID: 8426007784741722780}
---- !u!114 &47335256188157426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abd9ce6fa91aeb94282a64839b4c0e68, type: 3}
-  m_Name: Dialogue Branch - da970653-4802-4fe2-a002-2d10dffbb88e
-  m_EditorClassIdentifier: 
-  _nodeTypeName: FM.Editor.Systems.DialogueNodes.DialogueBranchNode, FM-Dialogues.Editor,
-    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  _nodePosition: {x: 1600, y: 75}
-  _guid: da970653-4802-4fe2-a002-2d10dffbb88e
-  _connections:
-  - _originPort:
-      _portName: Input
-      _portDirection: 0
-      _nodeGUID: da970653-4802-4fe2-a002-2d10dffbb88e
-    _targetPort:
-      _portName: Next
-      _portDirection: 1
-      _nodeGUID: 4317bd1c-3734-48fb-b72f-6c2bcb1ce267
-  - _originPort:
-      _portName: 0
-      _portDirection: 1
-      _nodeGUID: da970653-4802-4fe2-a002-2d10dffbb88e
-    _targetPort:
-      _portName: Input
-      _portDirection: 0
-      _nodeGUID: 59057024-6e2c-4b83-a9ac-147f3f83043a
-  - _originPort:
-      _portName: 1
-      _portDirection: 1
-      _nodeGUID: da970653-4802-4fe2-a002-2d10dffbb88e
-    _targetPort:
-      _portName: Input
-      _portDirection: 0
-      _nodeGUID: bf48bd5f-8bcd-433e-a7c1-e1a5a026903e
-  _dialogueFile: {fileID: 11400000}
-  _branches:
-  - Opcja 1
-  - Opcja 2
-  _actor: {fileID: 11400000, guid: c4d7d513dd0cd6b468c164aa528a4429, type: 2}
-  _line: "Wyb\xF3r 3 - z pomiarem czasu"
-  _branchData: {fileID: 0}
---- !u!114 &613498913373970284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2563b3688f45b5c409b332fdaaf10292, type: 3}
-  m_Name: Call String Event - fb572dfc-ddaf-47ab-8e01-4fa4f1c1fdfd
-  m_EditorClassIdentifier: 
-  _nodeTypeName: FM.Editor.Systems.DialogueNodes.CallStringEventNode, FM-Dialogues.Editor,
-    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  _nodePosition: {x: 925, y: 275}
-  _guid: fb572dfc-ddaf-47ab-8e01-4fa4f1c1fdfd
-  _connections:
-  - _originPort:
-      _portName: Input
-      _portDirection: 0
-      _nodeGUID: fb572dfc-ddaf-47ab-8e01-4fa4f1c1fdfd
-    _targetPort:
-      _portName: 2
-      _portDirection: 1
-      _nodeGUID: facde618-597f-43f9-ac48-43bed49ce91d
-  - _originPort:
-      _portName: Next
-      _portDirection: 1
-      _nodeGUID: fb572dfc-ddaf-47ab-8e01-4fa4f1c1fdfd
-    _targetPort:
-      _portName: Input
-      _portDirection: 0
-      _nodeGUID: 4317bd1c-3734-48fb-b72f-6c2bcb1ce267
-  _dialogueFile: {fileID: 11400000}
-  _event: {fileID: 11400000, guid: d9afa796d6c42b04bbad88e416a05d53, type: 2}
-  _eventValue: Wybrano3
---- !u!114 &782024348338145155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abd9ce6fa91aeb94282a64839b4c0e68, type: 3}
-  m_Name: Dialogue Branch - ea427119-3832-44c1-aa4c-0b2cff8df7cd
-  m_EditorClassIdentifier: 
-  _nodeTypeName: FM.Editor.Systems.DialogueNodes.DialogueBranchNode, FM-Dialogues.Editor,
-    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  _nodePosition: {x: 225, y: 50}
-  _guid: ea427119-3832-44c1-aa4c-0b2cff8df7cd
-  _connections:
-  - _originPort:
-      _portName: Input
-      _portDirection: 0
-      _nodeGUID: ea427119-3832-44c1-aa4c-0b2cff8df7cd
-    _targetPort:
-      _portName: Next
-      _portDirection: 1
-      _nodeGUID: 7062203a-8250-41ad-ac2c-702ba4745d67
-  - _originPort:
-      _portName: 0
-      _portDirection: 1
-      _nodeGUID: ea427119-3832-44c1-aa4c-0b2cff8df7cd
-    _targetPort:
-      _portName: Input
-      _portDirection: 0
-      _nodeGUID: facde618-597f-43f9-ac48-43bed49ce91d
-  - _originPort:
-      _portName: 1
-      _portDirection: 1
-      _nodeGUID: ea427119-3832-44c1-aa4c-0b2cff8df7cd
-    _targetPort:
-      _portName: Input
-      _portDirection: 0
-      _nodeGUID: facde618-597f-43f9-ac48-43bed49ce91d
-  - _originPort:
-      _portName: 2
-      _portDirection: 1
-      _nodeGUID: ea427119-3832-44c1-aa4c-0b2cff8df7cd
-    _targetPort:
-      _portName: Input
-      _portDirection: 0
-      _nodeGUID: facde618-597f-43f9-ac48-43bed49ce91d
-  _dialogueFile: {fileID: 11400000}
-  _branches:
-  - Opcja 1
-  - Opcja 2
-  - Opcja 3
-  _actor: {fileID: 11400000, guid: c0f88cdf6a9d6e74da1d4492a1cf8c85, type: 2}
-  _line: "Wyb\xF3r 1 - bez zapisu do pliku"
-  _branchData: {fileID: 0}
---- !u!114 &5586760554028715612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abd9ce6fa91aeb94282a64839b4c0e68, type: 3}
-  m_Name: Dialogue Branch - facde618-597f-43f9-ac48-43bed49ce91d
-  m_EditorClassIdentifier: 
-  _nodeTypeName: FM.Editor.Systems.DialogueNodes.DialogueBranchNode, FM-Dialogues.Editor,
-    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  _nodePosition: {x: 575, y: 50}
-  _guid: facde618-597f-43f9-ac48-43bed49ce91d
-  _connections:
-  - _originPort:
-      _portName: Input
-      _portDirection: 0
-      _nodeGUID: facde618-597f-43f9-ac48-43bed49ce91d
-    _targetPort:
-      _portName: 0
-      _portDirection: 1
-      _nodeGUID: ea427119-3832-44c1-aa4c-0b2cff8df7cd
-  - _originPort:
-      _portName: Input
-      _portDirection: 0
-      _nodeGUID: facde618-597f-43f9-ac48-43bed49ce91d
-    _targetPort:
-      _portName: 1
-      _portDirection: 1
-      _nodeGUID: ea427119-3832-44c1-aa4c-0b2cff8df7cd
-  - _originPort:
-      _portName: Input
-      _portDirection: 0
-      _nodeGUID: facde618-597f-43f9-ac48-43bed49ce91d
-    _targetPort:
-      _portName: 2
-      _portDirection: 1
-      _nodeGUID: ea427119-3832-44c1-aa4c-0b2cff8df7cd
-  - _originPort:
-      _portName: 0
-      _portDirection: 1
-      _nodeGUID: facde618-597f-43f9-ac48-43bed49ce91d
-    _targetPort:
-      _portName: Input
-      _portDirection: 0
-      _nodeGUID: 4a914a08-b49e-49c2-9b22-7fc216257408
-  - _originPort:
-      _portName: 1
-      _portDirection: 1
-      _nodeGUID: facde618-597f-43f9-ac48-43bed49ce91d
-    _targetPort:
-      _portName: Input
-      _portDirection: 0
-      _nodeGUID: 4e758d28-7f63-4007-883a-3c0a0296d783
-  - _originPort:
-      _portName: 2
-      _portDirection: 1
-      _nodeGUID: facde618-597f-43f9-ac48-43bed49ce91d
-    _targetPort:
-      _portName: Input
-      _portDirection: 0
-      _nodeGUID: fb572dfc-ddaf-47ab-8e01-4fa4f1c1fdfd
-  _dialogueFile: {fileID: 11400000}
-  _branches:
-  - Opcja 1
-  - Opcja 2
-  - Opcja 3
-  _actor: {fileID: 11400000, guid: c4d7d513dd0cd6b468c164aa528a4429, type: 2}
-  _line: "Wyb\xF3r 2 - z zapisem do pliku"
-  _branchData: {fileID: 0}
---- !u!114 &6960673171131265527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2563b3688f45b5c409b332fdaaf10292, type: 3}
-  m_Name: Call String Event - 4a914a08-b49e-49c2-9b22-7fc216257408
-  m_EditorClassIdentifier: 
-  _nodeTypeName: FM.Editor.Systems.DialogueNodes.CallStringEventNode, FM-Dialogues.Editor,
-    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  _nodePosition: {x: 925, y: -125}
-  _guid: 4a914a08-b49e-49c2-9b22-7fc216257408
-  _connections:
-  - _originPort:
-      _portName: Input
-      _portDirection: 0
-      _nodeGUID: 4a914a08-b49e-49c2-9b22-7fc216257408
-    _targetPort:
-      _portName: 0
-      _portDirection: 1
-      _nodeGUID: facde618-597f-43f9-ac48-43bed49ce91d
-  - _originPort:
-      _portName: Next
-      _portDirection: 1
-      _nodeGUID: 4a914a08-b49e-49c2-9b22-7fc216257408
-    _targetPort:
-      _portName: Input
-      _portDirection: 0
-      _nodeGUID: 4317bd1c-3734-48fb-b72f-6c2bcb1ce267
-  _dialogueFile: {fileID: 11400000}
-  _event: {fileID: 11400000, guid: d9afa796d6c42b04bbad88e416a05d53, type: 2}
-  _eventValue: Wybrano1
---- !u!114 &7385070351332702353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abd9ce6fa91aeb94282a64839b4c0e68, type: 3}
-  m_Name: Dialogue Branch - d166c464-987f-4b38-b80f-7c268e3c608f
-  m_EditorClassIdentifier: 
-  _nodeTypeName: FM.Editor.Systems.DialogueNodes.DialogueBranchNode, FM-Dialogues.Editor,
-    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  _nodePosition: {x: 2400, y: 75}
-  _guid: d166c464-987f-4b38-b80f-7c268e3c608f
-  _connections:
-  - _originPort:
-      _portName: Input
-      _portDirection: 0
-      _nodeGUID: d166c464-987f-4b38-b80f-7c268e3c608f
-    _targetPort:
-      _portName: Next
-      _portDirection: 1
-      _nodeGUID: 8ff4bb0e-c717-4ed7-8a66-93da20cde6cd
-  _dialogueFile: {fileID: 11400000}
-  _branches: []
-  _actor: {fileID: 11400000, guid: c0f88cdf6a9d6e74da1d4492a1cf8c85, type: 2}
-  _line: "Wiadomo\u015B\u0107 ko\u0144cowa"
-  _branchData: {fileID: 0}
---- !u!114 &8426007784741722780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2563b3688f45b5c409b332fdaaf10292, type: 3}
-  m_Name: Call String Event - 59057024-6e2c-4b83-a9ac-147f3f83043a
-  m_EditorClassIdentifier: 
-  _nodeTypeName: FM.Editor.Systems.DialogueNodes.CallStringEventNode, FM-Dialogues.Editor,
-    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  _nodePosition: {x: 1925, y: -175}
-  _guid: 59057024-6e2c-4b83-a9ac-147f3f83043a
-  _connections:
-  - _originPort:
-      _portName: Input
-      _portDirection: 0
-      _nodeGUID: 59057024-6e2c-4b83-a9ac-147f3f83043a
-    _targetPort:
-      _portName: 0
-      _portDirection: 1
-      _nodeGUID: da970653-4802-4fe2-a002-2d10dffbb88e
-  - _originPort:
-      _portName: Next
-      _portDirection: 1
-      _nodeGUID: 59057024-6e2c-4b83-a9ac-147f3f83043a
-    _targetPort:
-      _portName: Input
-      _portDirection: 0
-      _nodeGUID: 8ff4bb0e-c717-4ed7-8a66-93da20cde6cd
-  _dialogueFile: {fileID: 11400000}
-  _event: {fileID: 11400000, guid: d9afa796d6c42b04bbad88e416a05d53, type: 2}
-  _eventValue: Wybrano1

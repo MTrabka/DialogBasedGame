@@ -47,6 +47,11 @@ public class DialogueHandler : BaseDialogueReader
             case DialogueLineRuntimeNode dialogueLineRuntimeNode:
                 mainText.text = dialogueLineRuntimeNode.Line;
                 CreateButtonWithoutBranch(tekstPrzycisku);
+                if (dialogueLineRuntimeNode.Actor == timerActor)
+                {
+                    Debug.Log("Timer started");
+                    timer.StartLapseTimer();
+                }
                 break;
 
             case DialogueBranchRuntimeNode dialogueBranchRuntimeNode:
